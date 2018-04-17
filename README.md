@@ -1,4 +1,4 @@
-# c2-routable-tabs
+# c2-routable-tabs [![CircleCI](https://circleci.com/gh/ClearC2/c2-routable-tabs.svg?style=svg)](https://circleci.com/gh/ClearC2/c2-routable-tabs)
 
 The routable tabs component combines bootstrap v4's tabs with react-router v4's router.
 
