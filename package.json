@@ -7,7 +7,7 @@
     "start": "cd example && webpack-dev-server --inline --content-base dist --history-api-fallback --port 8083 --mode development",
     "compile": "babel -d lib/ src/",
     "build:docs": "rm -rf docs/*.js  && rm -rf docs/*.css && cd example && NODE_ENV=production webpack --mode production",
-    "test": "mocha --require babel-core/register ./test/null-compiler.js ./test/test-helper.js  \"test/**/*-test.@(js|jsx)\" \"test/**/**-test/*.@(js|jsx)\" -c --reporter mocha-junit-reporter",
+    "test": "mocha --require babel-core/register ./test/null-compiler.js ./test/test-helper.js  \"test/**/*-test.js\" -c",
     "test:watch": "npm run test -- --watch",
     "test:report": "nyc --reporter=html npm test"
   },

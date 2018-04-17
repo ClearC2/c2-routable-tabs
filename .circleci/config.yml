@@ -36,9 +36,7 @@ jobs:
       # run tests!
       - run: mkdir ~/junit
       - run:
-          command: mocha --require babel-core/register ./test/null-compiler.js ./test/test-helper.js  \"test/**/*-test.@(js|jsx)\" \"test/**/**-test/*.@(js|jsx)\" -c --reporter mocha-junit-reporter
-          environment:
-              MOCHA_FILE: junit/test-results.xml
+          command: MOCHA_FILE=~/junit/test-results.xml mocha --require babel-core/register ./test/null-compiler.js ./test/test-helper.js  \"test/**/*-test.js\" -c --reporter mocha-junit-reporter
           when: always
       - store_test_results:
           path: ~/junit
