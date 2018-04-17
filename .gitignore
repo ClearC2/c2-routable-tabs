@@ -67,3 +67,4 @@ typings/
 package-lock.json
 .idea
 .nyc_output
+test-results.xml
