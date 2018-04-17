@@ -25,14 +25,14 @@ function Example () {
 
 [See the working example.](example/src/App.js)
 
-## Tabs Props
+## <Tabs/> Props
 #### `className: string`
 Additional class name(s) you would like to apple to the container `div`.
 
 #### `children: Tab|Tab[]`
 `Tab` components.
 
-## Tab Props
+## <Tab/> Props
 #### `to: string`
 React router path.
 
