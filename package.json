@@ -13,7 +13,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "chmod +x pre-commit && ./pre-commit"
+      "pre-commit": "./node_modules/.bin/c2-pre-commit"
     }
   },
   "repository": {
@@ -34,7 +34,6 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.2",
     "babel-loader": "^7.1.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-polyfill": "^6.26.0",
@@ -46,17 +45,15 @@
     "dirty-chai": "^2.0.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^4.18.1",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-config-standard-react": "^6.0.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint": "^4.19.1",
+    "eslint-config-c2-react": "^1.0.0",
+    "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^3.0.1",
     "html-webpack-plugin": "^3.0.4",
-    "husky": "^0.15.0-rc.8",
+    "husky": "^1.0.0-rc.2",
     "jsdom": "^11.6.2",
     "jsdom-global": "^3.0.2",
     "mocha": "^5.0.5",
