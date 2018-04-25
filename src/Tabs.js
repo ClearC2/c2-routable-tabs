@@ -4,7 +4,6 @@ import {Route, Link, NavLink} from 'react-router-dom'
 
 const TabLink = ({to, exact, title, subtabs}) => {
   if (subtabs) {
-    console.log('test')
     return (
       <Route path={to} exact={exact} children={({ match }) => (
         <li className='nav-item dropdown'>
